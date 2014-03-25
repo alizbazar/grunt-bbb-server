@@ -60,7 +60,7 @@ module.exports = function(grunt) {
       // Register default compiler mappings.
       middleware: {
         // Script pre-processors.
-        //"\.coffee$": require("grunt-lib-coffee").compile,
+        "\.coffee$": require("grunt-lib-coffee").compile,
         //"\.ts$": require("grunt-lib-typescript").compile,
         "\.js$": function(buffer, req, res, next) {
           var moduleDir = _.find(options.moduleDirs, function(dir) {
